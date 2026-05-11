@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lydia Moreno - Associations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Montserrat', Arial, sans-serif
+    }
+
+    .header {
+        text-align: center;
+        padding: 10px;
+    }
+    .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #C7D941;
+        border-radius: 10px;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+    .navbar {
+        position: relative;
+        overflow: auto;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #C7D941;
+    }
+    .navbar ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+    }
+    .navbar ul li {
+        display: inline-block;
+    }   
+    .navbar a {
+        display: inline-block;
+        color: #000505; 
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: transparent;
+    }
+    .navbar a.active {
+        border-radius: 5px;
+        background-color: #F28444;
+        color: black;
+    }
+    .navbar a:hover:not(.active) {
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #F28444;
+        color: black;
+    }
+    .main {
+        padding: 30px;
+        border-color: #C7D941;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+    .main h3 {
+        border-left: 4px solid #C7D941;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a class="active" href="associations.html">Associations</a></li>
+            </ul>
+        </div>
+
+        <div class="header">
+            <h1>Lydia Moreno</h1>
+        </div>
+
+        <div class="main">
+            <h3>Professional Associations.</h3>
+            <p>Association for Computing Machinery (ACM) - ACM SIGCHI Student Chapter</p>
+            <p>DrexelCHI</p>
+            <p>User Experience Professionals Association (UXPA)</p>
+        </div>
+
+        <div class="footer">
+            <p><a href="mailto:lam547@drexel.edu">lam547@drexel.edu</a> | <a href="https://www.linkedin.com/in/lydia-moreno-9568abab">LinkedIn</a></p>
+        </div>
+    </body>
+</html>

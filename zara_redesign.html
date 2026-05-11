@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lydia Moreno - Zara Redesign</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+    body {
+        font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    .header {
+        text-align: center;
+        padding: 10px;
+    }
+    .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #C7D941;
+        position: relative;
+        bottom: 0;
+        border-radius: 10px;
+    }
+    .navbar {
+        position: relative;
+        overflow: auto;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #C7D941;
+    }
+    .navbar ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+    }
+    .navbar ul li {
+        display: inline-block;
+    }   
+    .navbar a {
+        display: inline-block;
+        color: #000505; 
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: transparent;
+    }
+    .navbar a.active {
+        border-radius: 5px;
+        background-color: #F28444;
+        color: black;
+    }
+    .navbar a:hover:not(.active) {
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #F28444;
+        color: black;
+    }
+    .main {
+        flex: 1;
+        padding: 30px;
+        border-color: #C7D941;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .column {
+        flex: 1;
+        padding: 50px;
+        border-color: #C7D941;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .column_plain {
+        border: none;
+    }
+    .row {
+        display: flex;
+    }
+    .main h3 {
+        border-left: 4px solid #C7D941;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="associations.html">Associations</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h1>Lydia Moreno</h1>
+        <h3>Redesigning Zara's Retail Website.</h3>
+    </div>
+
+    <div class="row">   
+    <div class="column">
+    <h3>Overview.</h3>
+        <p>This project focused on evaluating and redesigning Zara's retail website, which presented significant usability and accessibility challenges that made finding simple items difficult.</p>
+        <p>Over an 8-week period, I conducted a comprehensive usability evaluation, including a heuristic analysis, accessibility review, a competitive analysis, and think-aloud sessions to identify key breakdowns in the user experience.</p>
+        <p>From there, I synthesized findings through affinity mapping to prioritize the most pressing issues and narrow the project scope. With those in mind, I translated those insights into wireframes and a high-fidelity prototype. The final redesign delivers a clearer, more navigable, and more accessible shopping experience.</p>  
+        <br>
+        <p><em>Please Note:</em> Product images and interface screenshots are sourced from the Zara website and are used here for educational and portfolio purposes only. This project is an independent redesign concept and is not affiliated with or endorsed by Zara.</p>
+    </div>
+
+    <div class="column_plain">
+        <img src="zara-images/zara-two-women.jpg" alt="two women stomping it out" width="500px" height="auto" style="border-radius: 30px; margin-right: 10px; margin-bottom: 10px;">
+        </div>
+    </div>
+
+    <div class="main">
+        <h3>Phase 1: Research and Analysis.</h3>
+        <p>To kick off the project, I conducted a comprehensive usability evaluation of Zara's retail website.</p>
+
+    <p>Detailed look of the heuristic analysis, competitve analysis, and accessibility review can be found here: <a href="https://docs.google.com/spreadsheets/d/1OzE75w1gDgs25p5Ho1_mz89Misg1hJrAgagW3842FOo/edit?usp=sharing" target="_blank">Heuristic Evaluation, Competitive Analysis, and Accessibility Review</a></p></li>
+        <p>Click on each to expand for more:</p>
+
+    <details>
+        <summary>Heuristic Evaluation</summary>
+        <p>For the <strong>Heuristic Evaluation</strong>, I selected few simple tasks such as "Without using the search bar, find a women's black long sleeve shirt" and "Locate the men's 'New Arrivals' section" and even "Go to the home page," and stemmed the rest of the review from there.  This method provided a structured way to identify and prioritize usability issues across the Zara website Overall, I noted 23 different tasks or items that warranted a usability rating and how severe they were based on Nielsen Norman's Severity Ratings for Usability Problems:</p>
+        <ul>
+            <li>5 were usability catastrophes</li>
+            <li>9 were major usability problems</li>
+            <li>6 were minor usability problems</li>
+            <li>1 was cosmetic only</li>
+            <li>2 were not an issue</li>
+        </ul>
+        </p>
+    </details>
+
+    <details>
+        <summary>Competitive Analysis</summary>
+        <p><strong>For the competitive analysis</strong>, I chose to compare Zara's website with those of H&M, COS, and Everlane and selected those three for a few reasons: H&M is another fast fashion “mall” retailer; COS is another international brand with modern garments and an aspirational website to model; and Everlane is stylistically different and focused on sustainability. I thought a contrasting brand would offer interesting comparison points.</p>
+        <p>The competitive analysis brought clarity into just how unconventional Zara's website is. Zara performed miserably in comparison to others in areas like page layout, readability, site organization, and navigation. Conversely, it showed how thoughtfully designed COS's website was, which was an unexpected realization.</p>
+    </details>
+
+    <details>
+        <summary>Accessibility Review</summary>
+        <p>Since Zara's website is not compatible with WAVE or other online accessibility tools, I conducted a manual <strong>accessibility review</strong> instead. I created a list of WCAG guidelines directly related to the project and focused on a few areas such as the home page, a browsing page, and a product page. I noted several major issues with font legibility, navigability, and distracting website media.</p>
+    </details>
+
+    <details>
+        <summary>Think Aloud Sessions</summary>
+        <p>The final part of the research phase was focused on real users. My first goal here was to confirm whether the findings in the heuristic evaluation and competitive analysis were accurate and as significant as I thought. My second goal was to narrow down the design focus of the redesign.</p>
+        <p>I was able to recruit five participants and with each, conducted 30 minute “think aloud” usability sessions. After providing instructions and asking for consent to record the session, participants were asked to complete six to seven simple tasks based on the “catastrophic” and “major” usability issues discovered previously in the heuristic evaluation.</p>
+        <p>Some of the prompts included, “Take a moment to explore the homepage. What stands out to you? What do you expect to be able to do from here?” and “Choose any clothing item and add it to your shopping bag, as if you were planning to buy it.” 
+            <p>The “think aloud” sessions were especially insightful with participants confirming some of the same usability concerns that I noticed. After my session with participant 1, I added a task about the product page since they noted some interesting points about that design area which I felt was useful. Participant 2 had a unique accessibility perspective that informed some design areas and confirmed some of the accessibility issues I noted in the previous week. By participant 3, themes were becoming apparent, including major confusion about the homepage and how items are categorized, the “add-to-cart” button, and overall site structure. Due to technical and accessibility limitations during one session, screen-sharing data was not captured, which made it difficult to analyze the interaction in the same way as the other sessions. As a result, the findings presented here are based on four fully documented sessions.</p>
+            </p>
+            <p>Overall, the usability testing sessions revealed that users shared similar frustrations about the website, especially around the home page and navigation, and also identified areas that I did not anticipate, such as unclear clothing size information and minimal button hover states.</p>
+    </details>
+    </div>
+
+<div class="main">
+    <h3>Phase 2: Synthesis.</h3>
+
+                <h4>Affinity Mapping</h4>
+                <p>After gathering and analyzing the research data, I synthesized the findings to identify key themes and prioritize design areas for the redesign. I used affinity mapping to organize the insights into clusters, which helped me see patterns and relationships between the issues. From there, I focused on redesigning the homepage, navigation, and product pages, as those were the areas with the most significant usability problems and the most user frustration.</p>
+                <p>Detailed review of the Think Aloud sessions and Affinity Mapping synthesis can be found here: <a href="https://docs.google.com/document/d/12Zn3jQ5gktMgD1v0mIjjHlnTYm1Qx-OM5Ofq-pZwBeo/edit?usp=sharing" target="_blank">Think Aloud Sessions and Affinity Mapping Synthesis</a></p></li>
+
+                <img src="zara-images/Affinity Mapping-2.png" alt="Affinity Mapping" width="50%" height="auto" style="border-radius: 10px; margin-right: 10px; margin-bottom: 10px;">
+                <img src="zara-images/Affinity Mapping-3.png" alt="Affinity Mapping" width="50%" height="auto" style="border-radius: 10px; margin-right: 10px; margin-bottom: 10px;">
+                <img src="zara-images/Affinity Mapping-1.png" alt="Affinity Mapping" width="50%" height="auto" style="border-radius: 10px; margin-right: 10px; margin-bottom: 10px;">
+
+
+        <div class="row">
+            <div class="column-plain">
+                <h4>Overall Redesign Approach.</h4>
+                <p>After grouping comments from the Think Aloud sessions together, themes became apparent.  The most urgent issues users faced were related to homepage confusion, unclear navigation, and unintuitive menu organization, all of which created significant friction in early shopping tasks.</p>
+                <ul>
+                    <li><strong>Homepage.</strong> Redesigning the homepage to clearly communicate the brand's purpose, reduce visual noise, and offer intuitive entry points into the shopping experience (e.g., labeled imagery, product categories, and calls-to-action).</li>
+                    <li><strong>Global Navigation.</strong> Restructuring the global navigation, removing the hamburger menu, and reorganizing product categories to align with user expectations and support findability.</li>
+                    <li><strong>Hero Product Page.</strong> The hero product page will be redesigned to provide a more engaging and informative shopping experience, with more prominent hover states and button feedback, clearer sizing information, and clearer visual hierarchy.</li>
+                </ul>
+                <p>This scoped approach prioritizes clarity, usability, and confidence-building interactions, aligning the site's minimalist aesthetic with functional shopping behaviors.</p>
+            </div>
+        </div>
+</div>
+
+
+    <div class="main">
+        <h3>Phase 3: Design.</h3>
+        <p>Here, I began rethinking the page layouts and global navigation.  As mentioned, users expressed confusion and frustration with the home page, especially regarding its purpose and prioritization of design over functionality. Additionally, a very strong theme of navigation issues emerged, indicating a need for it to be completely restructured and redesigned.</p>
+
+        <h4>Design Decisions and Key Pages.</h4>
+        <p>Expand the design decisions to include more specific details about the changes made.</p>
+
+        <details>
+            <summary>Header & Footer</summary>
+            <p>For the header, I omitted the hamburger menu completely because it hid important categories, navigation cues, and call to actions, and because it is generally designed for smaller screens. Instead, I created a header that prominently displayed Zara’s logo, main shopping categories (Women, Men, Kids, Beauty, and Home), and icons for search, favorites, and the shopping bag. Since Zara’s website heavily featured the 50th anniversary collection, I created a custom logo that included the brand's established date as a way to highlight that. The footer remained largely the same, but with improved category headers, cleaned up lists, and a streamlined appearance. The header and footer appear consistently on every page.</p>
+        </details>
+
+        <details>
+            <summary>Navigation Menu</summary>
+            <p>The navigation menu caused the most trouble for users due to unclear and ambiguous product categorization. With the hamburger menu removed, the header became the main point of interaction. Hovering over each top-level category reveals a dropdown menu containing relevant items. For example, hovering over “women” displays an overlay menu with clothing, accessories, beauty, and edits (collections) with subcategories underneath. To help shoppers with wayfinding, I also restructured the categories from Zara's website by rearranging the list, combining similar items, and moving irrelevant items. This ideally will help shoppers efficiently find what they are looking for.</p>
+        </details>
+
+        <details>
+            <summary>Home Page</summary>
+            <p>Alongside the global navigation menu, the homepage underwent drastic changes. I tried several layouts to capture the editorial feeling of Zara’s aesthetic while also aiming to reduce wasted whitespace and offer intuitive entry points into the shopping experience (e.g., labeled imagery, product categories, and calls-to-action). Using Figma’s layout guides, I landed on a two column by four row layout with some frames spanning the entire width of the page, and others split in half. Opposite to Zara's website, I significantly minimized the spacing between sections, and omitted left and right margins altogether. This style was similar to aspirational and modern websites like COS, Everlane, and even Apple.</p>
+            <p>In terms of information hierarchy, the first section contained the featured collection, to immediately draw shoppers' attention. The second row contained categories for women’s and men’s clothing. The third row contained Zara Home, and the last contained Zara Beauty. Each section included clear, interactive labels and images that communicate the purpose of the section. Most interestingly, the size and orientation of the images were the biggest influence of the final layout, which is something I will keep in mind for the future.</p>
+            <img src="zara-images/home-page.png" alt="Home Page" width="50%" height="auto">
+        </details>
+
+        <details>
+            <summary>Tops/Shirts Page</summary>
+            <p>Next, I determined the layout of the tops, blouses, and shirts page. In Think Aloud task 3, Users found it very difficult to determine which of the many shirt categories to pick when looking for a black long sleeve shirt. To resolve this, I consolidated all tops into one page where users could filter by shirt type as necessary. </p>
+            <p>For layout, I initially designed the page to display four products across, but after adding in images, three columns looked less cluttered and more appealing. I also included alternate garment colors, which Zara’s website did not clearly show. I inserted featured items between regular products to mimic Zara's editorial-style aesthetic. Most importantly, I included a clear header and breadcrumb menu, which are currently missing in Zara's website.</p>
+            <img src="zara-images/tops-page.png" alt="Tops Page" width="50%" height="auto">
+        </details>
+
+        <details>
+            <summary>Product Page</summary>
+            <p>The goal of a product page is to give shoppers the details they need about a garment, reduce uncertainty about the product, and to encourage them to add an item to their bag. While Zara’s current website accomplished this to a point, the odd layout, overlay side menus, and dual-action size/add-to-cart button left users confused and underwhelmed. To address this, I  designed a two column layout to utilize the full page and maximize the product images: the left side contained the images, and the right size contained the product information. Inspired by COS’s design, I anchored the product information so that product details, size buttons, and add-to-bag button remained visible as shoppers scroll down the page. I also included a “complete the look” section at the bottom of the page to further encourage purchases.</p>
+            <img src="zara-images/product-page.png" alt="Product Page" width="50%" height="auto">
+        </details>
+
+        <details>
+            <summary>Browsing Page</summary>
+            <p>After creating the home, product, and shirt pages, I realized I needed a transition page to bridge the home page with the tops/shirts page. To do this, I created a browsing page with top level categories that included a featured collection, tops, bottoms, dresses, and beauty. I mimicked the home page with large images that mirror the categories and clear labelling. Again, I included a breadcrumb menu, and a clear header so that shoppers know where they are.</p>
+            <img src="zara-images/womens-browse-page.png" alt="Browsing Page" width="50%" height="auto">
+        </details>
+
+        <h4>Wireframes.</h4>
+            <p>I created wireframes for each page to establish the structure and layout of the content. The wireframes were designed to be simple and focused on functionality, with a clear hierarchy of information and intuitive navigation. I used Figma to create the wireframes, which allowed me to easily iterate and make changes based on feedback.</p>
+        
+            <div class="row">
+        <p><img src="zara-images/wireframe-product-page.png" alt="Product Page Wireframe" width="100%" height="auto"></p>
+        <p><img src="zara-images/wireframe-browse-page.png" alt="Browsing Page Wireframe" width="100%" height="auto"></p>
+        <p><img src="zara-images/wireframe-home-page-2.png" alt="Home Page Wireframe 2" width="100%" height="auto"></p>
+        <p><img src="zara-images/wireframe-home-page-3.png" alt="Home Page Wireframe 3" width="100%" height="auto"></p>
+
+        </div>
+
+        </div>
+    <div class="main">
+        <h3>Functional Prototype.</h3>
+        <p>Try to find a women's black long sleeve shirt - it should be pretty straightforward now.</p>
+        <a href="https://www.figma.com/proto/vZQHP068XU0tMczS9cPkXM/Zara-Website-Redesign?content-scaling=fixed&kind=proto&node-id=254-1025&page-id=254%3A1024&scaling=scale-down&starting-point-node-id=254%3A1025&t=Bg4ld1tlSCgYblkO-1" target="_blank">Open Interactive Prototype</a>
+    </div>
+    
+    <div class="main">
+        <h3>Final Thoughts.</h3>
+        <p>Overall, the redesign delivers a clearer, more navigable, and more accessible shopping experience. The homepage provides intuitive entry points into the shopping experience, while the navigation menu offers a more organized and user-friendly way to explore Zara's offerings. The product pages are designed to provide shoppers with the information they need to make informed purchasing decisions, while also encouraging them to add items to their bag. By addressing the key usability issues identified in the research phase, this redesign aims to create a more enjoyable and efficient online shopping experience for Zara's customers.</p>
+    </div>
+    
+        <div class="footer">
+        <p><a href="mailto:lam547@drexel.edu">lam547@drexel.edu</a> | <a href="https://www.linkedin.com/in/lydia-moreno-9568abab">LinkedIn</a></p>
+    </div>
+</body>
+</html>

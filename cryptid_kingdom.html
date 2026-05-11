@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lydia Moreno - Cryptid Kingdom</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+    body {
+        font-family: 'Montserrat', Arial, sans-serif
+    }
+
+    .header {
+        text-align: center;
+        padding: 10px;
+    }
+    .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #C7D941;
+        position: relative;
+        bottom: 0;
+        border-radius: 10px;
+    }
+    .navbar {
+        position: relative;
+        overflow: auto;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #C7D941;
+    }
+    .navbar ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+    }
+    .navbar ul li {
+        display: inline-block;
+    }   
+    .navbar a {
+        display: inline-block;
+        color: #000505; 
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: transparent;
+    }
+    .navbar a.active {
+        border-radius: 5px;
+        background-color: #F28444;
+        color: black;
+    }
+    .navbar a:hover:not(.active) {
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #F28444;
+        color: black;
+    }
+    .main {
+        padding: 30px;
+        border-color: #C7D941;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .column {
+        flex: 1;
+        padding: 30px;
+        border-color: #C7D941;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .column_plain {
+        border: none;
+    }
+    .row {
+        display: flex;
+    }
+    .main h3 {
+        border-left: 4px solid #C7D941;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+    .column h3 {
+        border-left: 4px solid #C7D941;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="associations.html">Associations</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h1>Lydia Moreno</h1>
+            <h3>Cryptid Kingdom Zoo Prototype.</h3>
+    </div>
+
+    <div class="main">
+        <h3>Overview.</h3>
+        <p> This playful and eerie website prototype invites users into a cryptid-themed zoo, where Bigfoot waves, Mothman greets guests, and no one's entirely sure what's lurking off the map. Designed in Figma, Cryptid Kingdom balances charm with spooky storytelling and a user-friendly design. From wireframes, to ticket purchasing flows, to a suspiciously helpful visitor page, every detail was crafted to delight visitors of all ages.</p>
+        <p>The full write-up can be found here: <a href="https://drive.google.com/file/d/1h_-SArwYl9GwnGyh2T-kCvBpQngkNYrz/view?usp=sharing" target="_blank">Cryptid Kingdom Paper</a></p>
+    </div>
+
+<div class="row">
+    <img src="images/Image mothman.png" alt="Mothman" width="300px" height="auto" style="border-radius: 30px; margin-right: 10px; margin-bottom: 10px;">
+
+    <div class="column">
+        <h3>Team Members.</h3>
+        <p>Ren Martin-Doike</p>
+        <p>Lydia Moreno</p>
+        <p>Tiffany Worsley</p>
+    </div>
+
+    <div class="column">
+        <h3>Tools Used.</h3>
+        <p>Balsamiq</p>
+        <p>Figma</p>
+        <p>FigJam</p>
+        <p>ChatGPT/DALL-E</p>
+    </div>
+
+    <div class="column">
+        <h3>Project Timeline.</h3>
+        <p>June 2025</p>
+        <p>2 weeks</p>
+    </div>
+
+</div>
+
+<div class="main">
+    <h3>Research and User Goals.</h3>
+        <p><b>Research.</b></p>
+        <p>To understand best practices for user interactions and design, we conducted market research on several different zoo websites, including the Philadelphia Zoo, the San Diego Zoo, the Chicago Zoo, the Honolulu Zoo, the Maryland Zoo, and the DC Zoo. These websites helped us better understand commonly used webpage layouts, general admission ticket user flows, seasonal event that required special admission, header and footer layout, visitor pages with zoo information, zoo maps, and overall information hierarchy. As part of our research, we also simulated the user flow of buying tickets on the Maryland Zoo and Philadelphia Zoo websites to understand how easy or difficult it was to navigate the ticket purchasing actions.</p>
+        <p>We also identified additional important features like visiting hours, membership information, educational resources, and key visitor demographics for ticket pricing such as children, teens, college students, adults, seniors, and military members. </p>
+
+    <p><b>User Goals.</b></p>
+        <p>Before sketching, we identified the following user goals for our website:</p>
+        <ul>
+            <li>Find the ticket purchasing page with clear pricing options.</li>
+            <li>Find the zoo map and understand where key attractions are located.</li>
+            <li>Explore different events and their details.</li>
+            <li>Find the visitor information page and understand the zoo's hours, location, and parking information.</li>
+        </ul>
+</div>
+
+<div class="main">
+    <h3>Design Process.</h3>
+    
+        <div class="row">
+            <div class="column_plain">
+            <h4>Sketching and Wireframing.</h4>
+                <p>We started the design process by sketching out different page layouts and ticket purchasing flows. We then translated those sketches into digital wireframes in Balsamiq, Figma, and Figjam, which we eventually used to create a high-fidelity prototype in Figma.</p>
+            </div>
+            <img src="images/Wireframes Hand Drawn.png" alt="Hand Drawn Wireframe" width="900px" height="auto" style="margin-right: 10px; margin-bottom: 10px;">
+        </div>
+
+        <div class="row">
+            <div class="column_plain">
+            <h4>Style Guide.</h4>
+                <p>Between creating our low- and mid- fidelity wireframes and our high-fidelity functional prototype in Figma, we spent time coming up with an informal style guide. This gave each team member the ability to take ownership of different parts of the prototype through the design process, while still maintaining a consistent look and feel across every page.</p>
+                <p>To ensure that the overall aesthetic and thematic messaging of the Cryptid Kingdom website was consistent, we included muted and earthy tones, fonts that were spooky yet accessible, and generated a series of images that featured whimsical, vintage, and approachable depictions of the cryptid zoo creatures.</p>
+                <p>We also opted to round any corners of images and containers to further soften the feel of the web pages, added interactive buttons that featured our “mothman eye red” color, and ensured that any written content evoked mysterious curiosity while also being age-appropriate.</p>
+            </div>
+            <img src="images/Style Guide.png" alt="Style Guide" width="600px" height="auto" style="border-radius: 10px; margin-right: 10px; margin-bottom: 10px;">
+        </div>
+       
+        <h4>Design Justification.</h4>
+        <p>Expand to learn more about each design decision.</p>
+    
+            <details>
+                <summary>Header and Footer</summary>
+                <p>In addition to our style guide, we included a header and footer that were visually consistent across all pages. The header included important action points such as the zoo name, “visit,” “learn,” “events,” “become a member,” and a member login button. The footer contained the zoo’s social media links, physical address, and “contact us.” The layout and action items in the header and footer were inspired by the zoo websites we researched.</p>
+            </details>
+
+            <details>
+                <summary>Home Page</summary>
+                <p>Next, we finalized the overall layout of the home page. We originally had taken inspiration from the Philadelphia Zoo website for this, but found that while the structure was successful, it felt too similar to a SharePoint page once we began to add in content. To better match our theme, we arranged the layout so that when users land on the home page, they would be greeted with an image of our featured creatures. Below that, we added “visit,” “events,” and the zoo map in small section containers. We felt that duplicating those three core actions from the header would subtly encourage users to engage with them.</p>
+            </details>
+
+            <details>
+                <summary>Visit Page</summary>
+                <p>From here, the rest of the page designs fell into place. Because the visit page is mostly informational, we leaned into visual hierarchy principles to ensure the most important content was listed at the top and that the rest followed sequentially. Additionally, we wrapped each section in its own container to ensure all the information was visually distinct, helping users easily find what they need without feeling overwhelmed.</p>
+            </details>
+
+            <details>
+                <summary>Events Page</summary>
+                <p>For the events page, and to keep a realistic project scope, we only included two events. We kept the layout similar to the visit page for visual consistency, added large thematic images to highlight each event, and listed only the most important event details such as date, time, and event information. We also kept the zoo map and confirmation pages simple and easy to digest by continuing the use of thematic imagery and text.</p>
+            </details>
+
+            <details>
+                <summary>Ticketing Page</summary>
+                <p>The most challenging piece of our design was the ticket purchasing pages. We wanted the design and interactions to feel cohesive with the rest of the website, while remaining clear and straightforward for users as they select and purchase tickets. Once again, we drew inspiration from several zoo websites to determine the best flow for this.</p>
+                <p>Some websites included date and time selection options and they all differed in their use journeys for selecting and purchasing event and regular tickets. In order to best serve zoo visitors, we decided to separate the user flows for general admission and event admission. When users clicked the “buy tickets” button from the visit page they would be directed to the general admission ticket page; when they selected the Bigfoot or costume event on the event pages, they would be directed to the corresponding event ticket page. We felt that this was the easiest way to ensure zoo visitors were confidently selecting and purchasing the tickets they were most interested in, and would, in turn, increase user control, minimize confusion, and increase successful ticket purchases.</p>
+            </details>
+
+        <p>Overall, each design choice was selected with zoo visitors in mind. We felt that we were very successful in striking a balance between aesthetic and function by creating a strong theme, simple user journeys, and clear visual organization. We hope that our design draws visitors into the eerie experience of Cryptid Kingdom just as much as it drew us in.</p>
+
+        <h3>Key Pages.</h3>
+            <div class="row">
+                <div class="column_plain">
+                <img src="images/Zoo Home Page.png" alt="Home Page" width="300px" height="auto" style="object-fit: contain; margin-right: 10px; margin-bottom: 10px;">
+                </div>
+                <div class="column_plain">
+                <img src="images/Zoo Visit Page.png" alt="Visit Page" width="300px" height="auto" style="object-fit: contain; margin-right: 10px; margin-bottom: 10px;">
+                </div>
+                <div class="column_plain">
+                <img src="images/Zoo Events Page.png" alt="Events Page" width="300px" height="auto" style="object-fit: contain; margin-right: 10px; margin-bottom: 10px;">
+                </div>
+                <div class="column_plain">
+                <img src="images/Zoo Map Page.png" alt="Ticketing Page" width="300px" height="auto" style="object-fit: contain; margin-right: 10px; margin-bottom: 10px;">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column_plain">
+                <img src="images/Zoo Admissions Page.png" alt="Map Page" width="300px" height="auto" style="object-fit: contain; margin-right: 10px; margin-bottom: 10px;">
+                </div>
+                <div class="column_plain">
+                <img src="images/Zoo Bigfoot Event Page.png" alt="Bigfoot Event Ticket Page" width="300px" height="auto" style="object-fit: contain; margin-right: 10px; margin-bottom: 10px;">
+                </div>
+                <div class="column_plain">
+                <img src="images/Zoo Checkout Page.png" alt="Costume Event Ticket Page" width="300px" height="auto" style="object-fit: contain; margin-right: 10px; margin-bottom: 10px;">
+                </div>
+                <div class="column_plain">
+                <img src="images/Zoo Confirmation Page.png" alt="Map Page" width="300px" height="auto" style="object-fit: contain; margin-right: 10px; margin-bottom: 10px;">
+                </div>
+            </div>
+
+        <h3>Functional Prototype.</h3>
+        <p>Try to "purchase" a zoo admission ticket.</p>
+        <a href="https://www.figma.com/proto/kwX9h9YLlpHak8sTqkwGmq/691-Zoo-Project?node-id=76-187&t=HKQ3yVutH0yAfg5o-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A187" target="_blank">Open Interactive Prototype</a>
+        
+        <h3>User Feedback</h3>
+            <p>We collected user feedback through 10-minute usability testing sessions with two participants conducted over Zoom using the “think-aloud” method. We aimed to get perspectives from users with different demographic attributes such as gender, age, and occupation. One user was a male from the Baby Boomer generation with a background in graphic design, copy editing, and literary publishing. The other user was a female from Generation-X with a background in higher education technology, copy editing, and ticket sales. With consent, we video recorded the Zoom user testing sessions and saved the transcript for greater ease of data codification. Users were informed that these recorded materials would be saved locally, reviewed only by project members, and deleted after the completion of this report.</p>
+            <p>Before running our user test, we came up with four tasks to have users complete:</p>
+                <ul>
+                    <li>Purchase one general admission ticket</li>
+                    <li>Purchase one special event ticket</li>
+                    <li>Find directions to the Cryptid Kingdom Zoo</li>
+                    <li>Locate the Cryptid Kingdom Zoo Map</li>
+                </ul>
+        
+        <h4>What We Heard.</h4>
+        <p>Expand to learn more about what users had to say.</p> 
+            
+            <details>
+                <summary>Task Results.</summary>
+                <p>We were pleased to observe that both users were able to complete all 4 tasks easily, quickly, and without assistance. One user noted, “it was very, very clear... the navigation kind of mapped to user activity.” Another user commented, “I would have happily done more.” Both showed interest in clicking through to the membership page, which was not made functional for this particular iteration. One user expressed particular appreciation for the “'Where the Wild Things Are' vibe”, calling the prototype “clearly themed.” They added that it did a good job of appealing to both adults and children.</p>
+            </details>
+
+            <details>
+                <summary>Changes Made Based on Feedback.</summary>
+                <p>Based on the feedback, we implemented recommendations from users, including moving the “buy tickets” button higher on the “visit” page for easier access, integrating the zoo’s physical address in the website footer, and adding a link to the zoo map within the “visit” page. Other ideas from our testers that we would incorporate into future design iterations included fleshing out the membership page, clarifying required versus optional text fields in the checkout form using red asterisks, and providing information about the Cryptid Kingdom Zoo's refund/exchange policies to help users make better informed purchase decisions.</p>
+            </details>
+
+            <details>
+                <summary>Additional Insights.</summary>
+                <p>It was observed that both users relied on the header links rather than the lower, image-based links to access the “visit” and “events” pages. This highlighted two key insights: 
+                    <ul>
+                        <li>First, the importance of the Nielsen's “visibility of system status” heuristic, which emphasizes the importance of visibility of interactive elements and clear conveyance of their affordances (Nielsen, 1995); and</li>
+                        <li>Second, alignment with findings from A/B Testing in INFO 615, where most users failed to locate menu buttons placed “below the fold,” or outside their immediate viewable browser area.</li>
+                    </ul>
+                </p>
+            </details>
+</div>
+
+<div class="main">
+    <div class="row">
+        <div class="column_plain">
+        <h3>Future Improvements and Ethical Considerations.</h3>
+            <h4>Future Improvements.</h4>
+            <p>Include doing usability testing with a larger sample size and a more fleshed-out website that has more features, focusing on enhancing engagement and immersion for visitors.</p>
+            <p>Based on our user feedback, we would include a more robust, integrated checkout system to allow visitors to purchase general zoo tickets and special event tickets together, streamlining the user flow and improving the overall user experience. We would incorporate information about the Cryptid Kingdom Zoo's ticket exchange and return policy, based on user feedback.</p>
+            <p>To further improve the customer experience, we would also include an online gift shop, where users can purchase Collectable Cryptid Cards, spooky souvenirs, and plushies of their favorite creatures. Additionally, we would add a “become a member” page with a corresponding user flow, and a “learn” page for visitors to meet our beasts, learn about the zoo's history, and read about any additional news about the zoo.</p>
+            <h4>Ethical Considerations.</h4>
+            <p>Another aspect of our zoo website that we would improve in future iterations is the map. After generating over a dozen different Cryptid Kingdom Zoo maps using OpenAI's DALL·E, we were unable to generate a map without one or more glaring errors, either in text or cryptid representation. This confirms our week 9 discussions about the limitations of Artificial Intelligence (AI) tools in UX design. Given more time, we would have preferred to work with human artists to create the map.</p>
+            <p>Beyond usability limitations, this also highlights important ethical considerations. The increasing use of AI-generated art has significant negative implications for the livelihoods of professional artists, whose work, expertise, and collaborative abilities are threatened by the use of free or low-cost generative tools. This represents just one aspect of AI's larger societal impact, which is also known to reinforce biases and exclude certain demographics, with some concerns being raised around its credibility. 
+            <p>Overall, as the field is continuously growing and evolving, this is a subject we will continue to study and be careful about unintended risks surrounding its usage. As designers, we recognize that these tools are powerful but not neutral, which informs our mindfulness when we choose to use them in our future work.</p>
+            </p>
+        </div>
+    </div>
+        <div class="column_plain">
+            <img src="images/Image Happy Baby Bigfoot.png" alt="Happy Baby Bigfoot" width="300" height="auto" style="border-radius: 30px; margin-right: 10px; margin-bottom: 10px;">
+
+        </div>
+</div>
+
+<div class="footer">
+    <p><a href="mailto:lam547@drexel.edu">lam547@drexel.edu</a> | <a href="https://www.linkedin.com/in/lydia-moreno-9568abab">LinkedIn</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lydia Moreno - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    * {
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: 'Montserrat', sans-serif
+    }
+
+    .header {
+        text-align: center;
+        padding: 10px;
+    }
+    .footer {
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #C7D941;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+    .navbar {
+        position: relative;
+        overflow: auto;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #C7D941;
+    }
+    .navbar ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+    }
+    .navbar ul li {
+        display: inline-block;
+    }   
+    .navbar a {
+        display: inline-block;
+        color: #000505; 
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: transparent;
+    }
+    .navbar a.active {
+        border-radius: 5px;
+        background-color: #F28444;
+        color: black;
+    }
+    .navbar a:hover:not(.active) {
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #F28444;
+        color: black;
+    }
+    .main {
+       margin-left: 25%;
+       margin-right: 25%;
+    }
+    .column {
+        border-color: #C7D941;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    .column:hover {
+        border-color: #F28444;
+        cursor: pointer;
+    }
+    .projectlink {
+        text-decoration: none;
+        color: black;
+        display: contents;
+    }
+    @media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    }
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="associations.html">Associations</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h1>Lydia Moreno</h1>
+        <h2>UX designer. Professionally annoyed by bad interfaces.</h2>
+        <p>Master's student in Human-Computer Interaction and User Experience at Drexel University.</p>
+        <p>Currently based in Philadelphia. Graduating June 2026.</p>
+    </div>
+
+    <div class="main">
+        <a href="projects.html" class="projectlink">
+        <div class="column">
+            <h3>View My Work.</h3>
+        </div>
+        </a>
+
+        <a href="about.html" class="projectlink">
+        <div class="column">
+            <h3>About Me.</h3>
+        </div>
+        </a>
+
+        <a href="resume.html" class="projectlink">
+        <div class="column">
+            <h3>Resume.</h3>
+        </div>
+        </a>
+
+        <a href="associations.html" class="projectlink">
+        <div class="column">
+            <h3>Professional Associations.</h3>
+        </div>
+        </a>    
+    </div>
+
+    <div class="footer">
+        <p><a href="mailto:lam547@drexel.edu">lam547@drexel.edu</a> | <a href="https://www.linkedin.com/in/lydia-moreno-9568abab">LinkedIn</a></p>
+    </div>
+
+</body>
+</html>
