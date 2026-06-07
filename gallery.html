@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    
+    <style>
+        @font-face {
+            font-family: 'AnikaRansom';
+            src: url('fonts/CSAnikaDrawn-Regular_demo.otf') format('opentype'); /* https://www.1001fonts.com/cs-anika-drawn-demo-font.html */
+            font-weight: normal;
+            font-style: normal;
+        }
+        .special-elite-regular {
+            font-family: "Special Elite", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body { 
+            background-image: url('images/graph_paper.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            font-family: 'Special Elite', system-ui;
+        }
+        .header {
+            text-align: center;
+        }
+        .header h1 {
+            font-family: 'AnikaRansom', serif;
+            font-size: 50px;
+        }
+        .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+        }
+        .navbar {
+            position: relative;
+            text-align: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 20px;
+        }
+        .navbar ul li:not(.dropdown-menu li) {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .navbar a {
+            display: inline-block;
+            color: #000505; 
+            text-align: center;
+            padding: 12px 14px;
+            text-decoration: none;
+            border-radius: 50px;
+            border-color: transparent;
+        }
+        .navbar a.active {            
+            background-color: #E8B84B;
+            color: #000505;
+            box-shadow: 4px 4px 0px #8B4513;
+        }
+        .navbar a:hover {
+            background-color: #E8B84B;
+            color: #000505;
+            box-shadow: 4px 4px 0px #8B4513;
+        }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+        .images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .image-card {
+            border: 2px solid #E8B84B;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .image-card:hover {
+            box-shadow: 4px 4px 0px #8B4513;
+            border-color: #8B4513;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            list-style-type: none;
+            margin: 0;
+            border-radius: 10px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 10px;
+        }
+        .dropdown-menu li {
+            display: block;
+            margin: 8px 0;
+        }
+        .dropdown-menu a {
+            color: #000505;
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+        }
+        .dropdown input[type="checkbox"] {
+            display: none;
+        }
+        .dropdown label {
+            display: inline-block;
+            color: #000505;
+            padding: 12px 14px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        .dropdown label:hover {
+            background-color: #E8B84B;
+            box-shadow: 4px 4px 0px #8B4513;
+        }
+        .dropdown input:checked ~ .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                 <input type="checkbox" id="dropdown-toggle">
+                <label for="dropdown-toggle">Learn</label>
+                    <ul class="dropdown-menu">
+                    <li><a href="video-guides.html">Video Guides</a></li>
+                    <li><a href="getting-started.html">Getting Started</a></li>
+                    <li><a href="what-is-a-junk-journal.html">What is a Junk Journal?</a></li>
+                    </ul>
+                </li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="ephemera-swap.html">Ephemera Swap</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="header">
+            <h1 style="font-family: AnikaRansom;" >The Junk Journal Collective</h1>
+        </div>
+
+        <h2>Gallery</h2>
+        <p>Here are some featured junk journals submitted by our community!</p>
+
+        <div class="images">
+            <div class="image-card">
+                <img src="images/cardboard.jpg" alt="Cardboard">
+                <p>Submit your creation!</p>
+            </div>
+            <div class="image-card">
+                <img src="images/pizza-pasta-spreads by u-Ok_Faithlessness3918 from r-JunkJournals.jpeg" alt="Pizza and Pasta Spreads by user Ok_Faithlessness3918 from r-JunkJournals">
+                <p>"Pizza and Pasta Spreads" by user Ok_Faithlessness3918 from <a href="https://www.reddit.com/r/JunkJournals/" target="_blank">r/JunkJournals</a></p>
+            </div>
+            <div class="image-card">
+                <img src="images/rainbow-spreads-red by u-artwoolf from r-JunkJournals.jpeg" alt="Rainbow Spreads by user artwoolf from r-JunkJournals">
+                <p>"Rainbow Spreads" by user artwoolf from <a href="https://www.reddit.com/r/JunkJournals/" target="_blank">r/JunkJournals</a></p>
+            </div>
+            <div class="image-card">
+                <img src="images/rainbow-spreads-yellow by u-artwoolf from r-JunkJournals.jpeg" alt="Yellow Spreads by user artwoolf from r-JunkJournals">
+                <p>"Yellow Spreads" by user artwoolf from <a href="https://www.reddit.com/r/JunkJournals/" target="_blank">r/JunkJournals</a></p>
+            </div>
+            <div class="image-card">
+                <img src="images/some-fun-ones by u:luminous12702 from r:JunkJournals.jpeg" alt="Some Fun Ones by user luminous12702 from r-JunkJournals">
+                <p>"Some Fun Ones" by user luminous12702 from <a href="https://www.reddit.com/r/JunkJournals/" target="_blank">r/JunkJournals</a></p>
+            </div>
+            <div class="image-card">
+                <img src="images/how-my-first-junk-journal-is-going by user aspiringfreak from r/JunkJournals.jpeg" alt="How My First Junk Journal is Going by user aspiringfreak from r-JunkJournals">
+                <p>"How My First Junk Journal is Going" by user aspiringfreak from <a href="https://www.reddit.com/r/JunkJournals/" target="_blank">r/JunkJournals</a></p>
+            </div>
+        </div>
+
+    <div class="footer">
+        <p>&copy; 2026 The Junk Journal Collective. All rights reserved. This website is student-built and is for educational purposes only.</p>
+    </div>
+</body>
+</html>

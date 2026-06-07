@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ephemera Swap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    
+    <style>
+        @font-face {
+            font-family: 'AnikaRansom';
+            src: url('fonts/CSAnikaDrawn-Regular_demo.otf') format('opentype'); /* https://www.1001fonts.com/cs-anika-drawn-demo-font.html */
+            font-weight: normal;
+            font-style: normal;
+        }
+        .special-elite-regular {
+            font-family: "Special Elite", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body { 
+            background-image: url('images/graph_paper.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            font-family: 'Special Elite', system-ui;
+        }
+        .header {
+            text-align: center;
+        }
+        .header h1 {
+            font-family: 'AnikaRansom', serif;
+            font-size: 50px;
+        }
+        .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+        }
+        .navbar {
+            position: relative;
+            text-align: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 20px;
+        }
+        .navbar ul li:not(.dropdown-menu li) {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .navbar a {
+            display: inline-block;
+            color: #000505; 
+            text-align: center;
+            padding: 12px 14px;
+            text-decoration: none;
+            border-radius: 50px;
+            border-color: transparent;
+        }
+        .navbar a.active {            
+            background-color: #E8B84B;
+            color: #000505;
+            box-shadow: 4px 4px 0px #8B4513;
+        }
+        .navbar a:hover {
+            background-color: #E8B84B;
+            color: #000505;
+            box-shadow: 4px 4px 0px #8B4513;
+        }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+        .images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .image-card {
+            border: 2px solid #E8B84B;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+         .image-card:hover {
+            box-shadow: 4px 4px 0px #8B4513;
+            border-color: #8B4513;
+            border-style: solid;
+            border-width: 2px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #E8B84B;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            list-style-type: none;
+            margin: 0;
+            border-radius: 10px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 10px;
+        }
+        .dropdown-menu li {
+            display: block;
+            margin: 8px 0;
+        }
+        .dropdown-menu a {
+            color: #000505;
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+        }
+        .dropdown input[type="checkbox"] {
+            display: none;
+        }
+        .dropdown label {
+            display: inline-block;
+            color: #000505;
+            padding: 12px 14px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        .dropdown label:hover {
+            background-color: #E8B84B;
+            box-shadow: 4px 4px 0px #8B4513;
+        }
+        .dropdown input:checked ~ .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                 <input type="checkbox" id="dropdown-toggle">
+                <label for="dropdown-toggle">Learn</label>
+                    <ul class="dropdown-menu">
+                    <li><a href="video-guides.html">Video Guides</a></li>
+                    <li><a href="getting-started.html">Getting Started</a></li>
+                    <li><a href="what-is-a-junk-journal.html">What is a Junk Journal?</a></li>
+                    </ul>
+                </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="ephemera-swap.html" class="active">Ephemera Swap</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="header">
+            <h1 style="font-family: AnikaRansom;" >The Junk Journal Collective</h1>
+        </div>
+
+        <h2>Ephemera Swap</h2>
+        <p>Looking for some unique ephemera to add to your junk journal? Trying to de-stash? Check out what our community has to offer!</p>
+        <div class="button">
+            <p>Share Items</p>
+        </div>
+        <div class="button">
+            <p>Search for Items</p>
+        </div>
+
+        <div class="images">
+            <div class="image-card">
+                <img src="images/swap-bon-appetit-mags.jpeg" alt="Ephemera Swap 1">
+                <a href="https://www.etsy.com/listing/4512815488/vintage-bon-appetit-magazines-pick-your?ls=s&ga_order=most_relevant&ga_search_type=vintage&ga_view_type=gallery&ga_search_query=magazines&ref=sr_gallery-1-1&pro=1&sts=1&content_source=06c2822d-2164-4cd9-a707-27d49ffece99%253ALT0524d76160ac4f65c1d934931e517237df13ecb3&organic_search_click=1&logging_key=06c2822d-2164-4cd9-a707-27d49ffece99%3ALT0524d76160ac4f65c1d934931e517237df13ecb3" target="_blank">TaurusMidheaven28 on Etsy</a>
+                <p>Two Bon Appétit magazines up for grabs!</p>
+            </div>
+            <div class="image-card">
+                <img src="images/swap-postage-stamps.jpeg" alt="Ephemera Swap 2">
+                <a href="https://www.etsy.com/listing/614616969/vintage-stamp-styling-set-photography?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=stamps&ref=sr_gallery-1-6&frs=1&content_source=e53cb24e-5a22-42fa-bb66-0fd32c374c6d%253ALTcf5410aa1c24d80e0e879bd19a3dbc646ee0f9c5&organic_search_click=1&logging_key=e53cb24e-5a22-42fa-bb66-0fd32c374c6d%3ALTcf5410aa1c24d80e0e879bd19a3dbc646ee0f9c5" target="_blank">ExtrasbyEmily on Etsy</a>
+                <p>Assortment of vintage postage stamps.</p>
+            </div>
+            <div class="image-card">
+                <img src="images/swap-stickers.jpeg" alt="Ephemera Swap 3">
+                <a href="https://www.etsy.com/listing/4302412523/tomato-lemon-stickers-mediterranean?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=stickers&ref=sr_gallery-1-6&pro=1&pop=1&content_source=2f419f98-3a5c-4fd2-9c33-f0d77bd3dfbf%253ALTe670cf6d2fef2301b3b4415d666c77882a29b234&organic_search_click=1&logging_key=2f419f98-3a5c-4fd2-9c33-f0d77bd3dfbf%3ALTe670cf6d2fef2301b3b4415d666c77882a29b234" target="_blank">TJstickersNZ on Etsy</a>
+                <p>Some colorful stickers!</p>
+            </div>
+            <div class="image-card">
+                <img src="images/swap-ribbon.jpeg" alt="Ephemera Swap 4">
+                <a href="https://www.etsy.com/listing/1863202855/fields-of-color-ribbon-by-the-yard?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=ribbon&ref=sr_gallery-1-2&bes=1&content_source=48396e54-5ab4-4cfc-b4fb-0a284d9ce79e%253ALT511de0ac85ffec5b92874b37b4dcaf5a121e0e74&organic_search_click=1&logging_key=48396e54-5ab4-4cfc-b4fb-0a284d9ce79e%3ALT511de0ac85ffec5b92874b37b4dcaf5a121e0e74" target="_blank">The Blossom Makes on Etsy</a>
+                <p>A roll of colorful ribbon.</p>
+            </div>
+            <div class="image-card">
+                <img src="images/swap-vintage-maps.jpeg" alt="Ephemera Swap 5">
+                <a href="https://www.etsy.com/listing/1479811438/set-of-15-old-vintage-maps-crafting?ls=s&ga_order=most_relevant&ga_search_type=vintage&ga_view_type=gallery&ga_search_query=maps+for+junk+journals&ref=sr_gallery-1-6&sts=1&content_source=117aad37-096e-4819-8835-2d301ffc7c79%253ALT7869f95486cfb479b2dee9b01a920062e21d8913&organic_search_click=1&logging_key=117aad37-096e-4819-8835-2d301ffc7c79%3ALT7869f95486cfb479b2dee9b01a920062e21d8913" target="_blank">CharmingTreasurFinds on Etsy</a>
+                <p>Assortment of vintage maps.</p>
+            </div>
+            <div class="image-card">
+                <img src="images/swap-washi-tape.jpeg" alt="Ephemera Swap 6">
+                <a href="https://www.etsy.com/listing/1792133248/houseplants-washi-tape-wide-cute-plant?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=washi+tape&ref=sr_gallery-1-56&etp=1&content_source=c5fb9c14-a302-4f9f-b3b9-2f186f63ba31%253ALT01fff153721bbefedb5b8cc5146eea0077cbdeb8&organic_search_click=1&logging_key=c5fb9c14-a302-4f9f-b3b9-2f186f63ba31%3ALT01fff153721bbefedb5b8cc5146eea0077cbdeb8" target="_blank">LittleTruthsStudio on Etsy</a>
+                <p>A roll of colorful washi tape.</p>
+            </div>
+            <div class="image-card">
+                <img src="images/swap-national-geographic.jpeg" alt="Ephemera Swap 7">
+                <a href="https://www.etsy.com/listing/4387422238/1x-1940s-1950s-1960s-1970s-1980s-1990s?ls=s&ga_order=most_relevant&ga_search_type=vintage&ga_view_type=gallery&ga_search_query=magazines&ref=sr_gallery-1-2&content_source=c16c2a02-679b-48cc-8e26-4f56babc5bad%253ALT5dfb227ae3938d3df926b2e38b9bb8c135d3e8fd&organic_search_click=1&logging_key=c16c2a02-679b-48cc-8e26-4f56babc5bad%3ALT5dfb227ae3938d3df926b2e38b9bb8c135d3e8fd" target="_blank">Succulents and Paper on Etsy</a>
+                <p>Assortment of National Geographic magazines.</p>
+            </div>
+            <div class="image-card">
+                <img src="images/swap-seed-packets.jpeg" alt="Ephemera Swap 8">
+                <a href="https://www.etsy.com/listing/4412660530/vintage-seed-packets-1940s-bundles-of?ls=s&ga_order=most_relevant&ga_search_type=vintage&ga_view_type=gallery&ga_search_query=seed+packets&ref=sr_gallery-1-2&sts=1&content_source=5e1609d8-b6a8-4c26-8c6e-0dd90fc70d97%253ALTabbb8709501b299d68c098f998a1fed4d4289ba9&organic_search_click=1&logging_key=5e1609d8-b6a8-4c26-8c6e-0dd90fc70d97%3ALTabbb8709501b299d68c098f998a1fed4d4289ba9" target="_blank">Ordinary Artifacts on Etsy</a>
+                <p>Assortment of vintage seed packets.</p>
+            </div>
+        </div>
+
+    <div class="footer">
+        <p>&copy; 2026 The Junk Journal Collective. All rights reserved. This website is student-built and is for educational purposes only.</p>
+    </div>
+</body>
+</html>
